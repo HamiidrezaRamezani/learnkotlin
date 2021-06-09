@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/input_color"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/input_color"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="textPersonName"
+        android:paddingTop="60pt"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="C" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="+/-" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="%" />
+
+            <Button
+                style="@style/btn_operation"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="7" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="8" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="9" />
+
+            <Button
+                style="@style/btn_operation"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="4" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="5" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="6" />
+
+            <Button
+                style="@style/btn_operation"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="1" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="2" />
+
+            <Button
+                style="@style/btn_default_style"
+                android:text="3" />
+
+            <Button
+                style="@style/btn_operation"
+                android:text="+" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/zero_btn_style"
+            android:text="0" />
+
+        <Button
+            style="@style/btn_default_style"
+            android:text="." />
+
+        <Button
+            style="@style/btn_operation"
+            android:text="=" />
+    </LinearLayout>
+</LinearLayout>
