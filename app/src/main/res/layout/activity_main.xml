@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/showNumber"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/input_color"
         android:ems="10"
@@ -19,7 +19,9 @@
         android:paddingTop="60pt"
         android:text="0"
         android:textColor="@android:color/white"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -29,84 +31,116 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="C" />
+                android:text="C"
+                android:id="@+id/btn_1"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="+/-" />
+                android:text="+/-"
+                android:id="@+id/btn_2"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="%" />
+                android:text="%"
+                android:id="@+id/btn_3"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_operation"
-                android:text="/" />
+                android:text="/"
+                android:id="@+id/btn_4"
+                android:onClick="clickButtonEvent"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="7" />
+                android:text="7"
+                android:id="@+id/btn_5"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="8" />
+                android:text="8"
+                android:id="@+id/btn_6"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="9" />
+                android:text="9"
+                android:id="@+id/btn_7"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_operation"
-                android:text="*" />
+                android:text="*"
+                android:id="@+id/btn_8"
+                android:onClick="clickButtonEvent"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="4" />
+                android:text="4"
+                android:id="@+id/btn_9"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="5" />
+                android:text="5"
+                android:id="@+id/btn_10"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="6" />
+                android:text="6"
+                android:id="@+id/btn_11"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_operation"
-                android:text="-" />
+                android:text="-"
+                android:id="@+id/btn_12"
+                android:onClick="clickButtonEvent"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="1" />
+                android:text="1"
+                android:id="@+id/btn_13"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="2" />
+                android:text="2"
+                android:id="@+id/btn_14"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_default_style"
-                android:text="3" />
+                android:text="3"
+                android:id="@+id/btn_15"
+                android:onClick="clickButtonEvent"/>
 
-            <Button
+            <TextView
                 style="@style/btn_operation"
-                android:text="+" />
+                android:text="+"
+                android:id="@+id/btn_16"
+                android:onClick="clickButtonEvent"/>
         </TableRow>
     </TableLayout>
 
@@ -115,16 +149,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <TextView
             style="@style/zero_btn_style"
-            android:text="0" />
+            android:text="0"
+            android:id="@+id/btn_17"
+            android:onClick="clickButtonEvent"/>
 
-        <Button
+        <TextView
             style="@style/btn_default_style"
-            android:text="." />
+            android:text="."
+            android:id="@+id/btn_18"
+            android:onClick="clickButtonEvent"/>
 
         <Button
             style="@style/btn_operation"
-            android:text="=" />
+            android:text="="
+            android:id="@+id/btn_19"
+            android:onClick="clickButtonEvent"/>
     </LinearLayout>
 </LinearLayout>
