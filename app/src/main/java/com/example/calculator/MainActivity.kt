@@ -97,6 +97,27 @@ class MainActivity : AppCompatActivity() {
                     number += "6"
                 }
             }
+            btn_18.id -> {
+                // todo: prevent user to add more than one dot
+                if (number == "") {
+                    number = "0."
+                } else {
+                    number += "."
+                }
+            }
+            btn_2.id -> {
+                // todo: prevent user to add more than one dot
+                number = if (number == "0" || number == "") {
+                    "0"
+                } else {
+                    if (number.first() == '-') {
+                        number.substring(1, number.lastIndex + 1)
+                    } else {
+                        "-$number"
+                    }
+                }
+            }
+
         }
         return number
     }
